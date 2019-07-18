@@ -1,0 +1,91 @@
+body,html {
+    height: 100vh;
+  }
+
+body {
+    color: white;
+    background: #0052D4;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6FB1FC, #4364F7, #0052D4);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6FB1FC, #4364F7, #0052D4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: auto;
+}
+
+/* navbar */
+
+.navbar-custom {
+    background: #0052D4;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6FB1FC, #4364F7, #0052D4);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6FB1FC, #4364F7, #0052D4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: rgba(255,255,255,.8);
+    font-size: 2.5vmin;
+}
+
+/* color of links */
+.navbar-custom .navbar-nav .nav-link {
+    color: rgba(255,255,255,.7);
+    font-size: 2.5vmin;
+}
+
+/* active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: #ffffff;
+}
+
+/* dropdown */
+
+.togglerColor {
+    color: rgba(255,255,255,.7);
+}
+.navbar-custom .dropdown-menu {
+    background: #0052D4;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6FB1FC, #4364F7, #0052D4);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6FB1FC, #4364F7, #0052D4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.navbar-custom .dropdown-item {
+    color: #ffffff;
+}
+.navbar-custom .dropdown-item:hover,
+.navbar-custom .dropdown-item:focus {
+    background-color: rgba(255,255,255,.7);
+}
+
+/* ------------------------------------------------- */
+#firstRow {
+    margin-top: 16vh;
+}
+
+.iconRow {
+    margin-top: 10vh;
+}
+
+.iconSpacing {
+    margin-left: 9vh;
+}
+
+#name {
+    font-family: 'Work Without', sans-serif;
+    font-weight: 800;
+    color: white;
+    font-size: 4vmax;
+}
+
+#about {
+    color: white;
+    font-size: 4vmax;
+}
+
+.icon {
+    font-size: 5vmax;
+    color: white;
+}
+
+
+
+
+
