@@ -42,7 +42,7 @@ html {
 /* ------------------------------------------------- */
 
 
-.container-fluid::after {
+html::after {
     content: "";
     display: block;
     position: absolute;
@@ -113,6 +113,99 @@ html {
     font-size: 3.75vmax;
 }
 
-contactForm {
-    display: block-inline;
+/* Contact Page */
+.container-fluid {
+    color: white;
+    font-weight: 300;
+    width: 75vw;
+    font-family: 'Raleway', sans-serif;
 }
+
+
+#contactTitle {
+    font-weight: 400;
+    margin-top: 2vh;
+    margin-bottom: 3vh;
+    font-size: 2.7vmax;
+}
+
+.form-group label {
+    font-size: 1.7vmax;
+}
+
+::placeholder {
+    font-size: 1.5vmax;
+}
+
+
+#full-name {
+    width: 40vw;
+    height: 3.5vh;
+}
+
+#email-address {
+    width: 55vw;
+    height: 3.5vh;
+}
+
+#message {
+    width: 63vw;
+    height: 15vh;
+}
+
+#fs-frm button {
+    background-color: #d4af37;
+    width: 15vmax;
+    height: 5vh;
+    font-size: 1.7vmax;
+    margin-top: 2vh;
+}
+
+@media (min-width: 1000px) {
+    .form-group label {
+        font-size: 20px;
+    } 
+    ::placeholder {
+        font-size: 16px;
+    } 
+    #fs-frm button {
+        font-size: 20px;
+        width: 175px;
+        height: 47px;
+    }
+}
+
+#hover:hover {
+    color: white;
+}
+
+#hover:active {
+    background-color:#d4af37;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+  #hover span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  #hover span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  #hover:hover span {
+    padding-right: 25px;
+  }
+  
+  #hover:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
