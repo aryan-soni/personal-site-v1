@@ -93,16 +93,6 @@ html::after {
     font-size: 2.5vmax;
 }
 
-#about {
-    color:#585858;
-    font-size: 2.5vmax;
-}
-
-#about:hover {
-    color: #d4af37;
-    font-size: 3vmax;
-}
-
 .icon {
     font-size: 3vmax;
     color: #585858	;
