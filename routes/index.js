@@ -25,7 +25,7 @@ router.get("/contact", (req,res) => {
     res.render("contact");
 })
 
-// contact
+// github
 router.get("/github", (req,res) => {
     res.redirect("https://github.com/aryan-soni");
 })
