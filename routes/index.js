@@ -16,19 +16,24 @@ router.get("/resume", (req,res)=> {
 });
 
 // portfolio
-router.get("/portfolio"), (req,res) => {
+router.get("/portfolio", (req,res) => {
     res.render("portfolio");
-}
+});
 
 // contact
 router.get("/contact", (req,res) => {
     res.render("contact");
-})
+});
 
 // github
 router.get("/github", (req,res) => {
     res.redirect("https://github.com/aryan-soni");
-})
+});
+
+// about
+router.get("/about", (req,res) => {
+    res.render("about");
+});
 
 module.exports = router;
 

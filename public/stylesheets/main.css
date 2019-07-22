@@ -93,9 +93,19 @@ html::after {
     font-size: 2.5vmax;
 }
 
+#aboutIcon {
+    color: #585858;
+    font-size: 2.5vmax;
+}
+
 .icon {
     font-size: 3vmax;
-    color: #585858	;
+    color: #585858;
+}
+
+#aboutIcon:hover {
+    color: #d4af37;
+    font-size: 3.75vmax;    
 }
 
 .icon:hover {
@@ -104,7 +114,7 @@ html::after {
 }
 
 /* Contact Page */
-.container-fluid {
+#contactPage {
     color: white;
     font-weight: 300;
     width: 75vw;
@@ -113,7 +123,7 @@ html::after {
 
 
 #contactTitle {
-    font-weight: 400;
+    font-weight: 300;
     margin-top: 2vh;
     margin-bottom: 3vh;
     font-size: 2.7vmax;
@@ -126,7 +136,6 @@ html::after {
 ::placeholder {
     font-size: 1.5vmax;
 }
-
 
 #full-name {
     width: 40vw;
@@ -199,3 +208,46 @@ html::after {
     opacity: 1;
     right: 0;
   }
+
+  /* About Page */
+  
+  #aboutPage {
+    color: black;
+    font-weight: 300;
+    width: 90vw;
+    font-family: 'Raleway', sans-serif;
+  }
+
+  #contentBox {
+    width: 90vw;
+    background-color: #F5F5F5;
+    border-radius: 10%;
+    border-width: 5px;
+    border-style: ridge;
+    border-color: #d4af37;
+    font-size: 1.7vmax;
+  }
+
+  #reach {
+      color: #585858;
+      font-weight: 400;
+      text-decoration: underline;
+  }
+
+  #reach:hover {
+      color: #d4af37;
+      font-size: 2vmax;
+  }
+
+  @media (min-width: 1000px) {
+    #contentBox {
+        font-size: 16;
+    }
+}
+
+#aboutTitle {
+    color: white;
+    font-weight: 300;
+    margin-top: 2vh;
+    font-size: 2.7vmax;
+}
