@@ -209,15 +209,7 @@ html::after {
     right: 0;
   }
 
-  /* About Page */
-  
-  #aboutPage {
-    color: black;
-    font-weight: 300;
-    width: 90vw;
-    font-family: 'Raleway', sans-serif;
-  }
-
+  /* Relevant to About PAage and Portfolio Page */
   #contentBox {
     width: 90vw;
     background-color: #F5F5F5;
@@ -226,6 +218,15 @@ html::after {
     border-style: ridge;
     border-color: #d4af37;
     font-size: 1.7vmax;
+  }
+
+  /* About Page */
+  
+  #aboutPage {
+    color: black;
+    font-weight: 300;
+    width: 90vw;
+    font-family: 'Raleway', sans-serif;
   }
 
   #reach {
@@ -239,7 +240,7 @@ html::after {
       font-size: 2vmax;
   }
 
-  @media (min-width: 1000px) {
+@media (min-width: 1000px) {
     #contentBox {
         font-size: 16;
     }
@@ -251,3 +252,41 @@ html::after {
     margin-top: 2vh;
     font-size: 2.7vmax;
 }
+
+/* Portfolio Page */
+#portfolioTitle {
+    color: white;
+    font-weight: 300;
+    margin-top: 2vh;
+    font-size: 2.7vmax;
+}
+
+#contentBox img {
+    width: 20vmax;
+    height: 15vmax;
+    border-radius: 20%;
+}
+
+#joinTheHuddle {
+    margin-top: 2vh;
+}
+
+#jthTitle {
+    font-weight: 300;
+    font-size: 2vmax;
+    text-decoration: underline;
+}
+
+@media (min-width: 1150px) {
+    #jthTitle {
+        font-size: 23px;
+    }
+}
+
+/* @media (min-width: 1300px) {
+    #contentBox img {
+        width: 20vw;
+        height: 16h;
+        border-radius: 20%;
+    }
+} */
