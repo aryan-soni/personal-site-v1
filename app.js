@@ -6,6 +6,7 @@ const app = express();
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
+app.use(express.static(__dirname + "/views/files"));
 
 // require indexRoutes; stores file with all relevant routes 
 const indexRoutes = require("./routes/index");

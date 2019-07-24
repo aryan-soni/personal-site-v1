@@ -1,4 +1,6 @@
-const express = require("express");
+const express = require("express"),
+      fs      = require("fs"),
+      path    = require("path");
 
 const router = express.Router();
 
@@ -12,7 +14,7 @@ router.get("/", (req,res) => {
 
 // resume 
 router.get("/resume", (req,res)=> {
-    res.render("resume.pdf");
+    res.redirect("https://drive.google.com/file/d/1pDwevSji7ciibq6OeJnMKlvt5wk-ojKW/view?usp=sharing");
 });
 
 // portfolio

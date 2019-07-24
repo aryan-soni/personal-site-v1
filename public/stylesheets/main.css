@@ -42,7 +42,7 @@ html {
 /* ------------------------------------------------- */
 
 
-html::after {
+body::after {
     content: "";
     display: block;
     position: absolute;
@@ -283,10 +283,24 @@ html::after {
     }
 }
 
-/* @media (min-width: 1300px) {
-    #contentBox img {
-        width: 20vw;
-        height: 16h;
-        border-radius: 20%;
-    }
-} */
+/* resume */
+.content {
+    width: 100%;
+    margin: 0px auto;
+ }
+ 
+ .embed-container {
+    height: 0;
+    width: 100%;
+    padding-bottom: 60%; /* play with this until right */
+    overflow: hidden;
+    position: relative;
+ }
+ 
+ .embed-container iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+ }
