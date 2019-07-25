@@ -93,7 +93,19 @@ body {
     color: #d4af37;
     font-size: 3.75vmax;
 }
-
+@media (max-width: 500px){
+    #name {
+        font-size: 3vmax;
+    }
+    
+    #aboutIcon {
+        font-size: 3vmax;
+    }
+    
+    .icon {
+        font-size: 3.3vmax;
+    }
+}
 /* Contact Page */
 #contactPage {
     color: black;
@@ -190,7 +202,7 @@ body {
     right: 0;
   }
 
-  /* Relevant to About PAage and Portfolio Page */
+  /* Relevant to About Page and Portfolio Page */
   #contentBox {
     width: 90vw;
     background-color: #F5F5F5;
@@ -237,6 +249,9 @@ body {
     font-size: 2.7vmax;
 }
 
+.bold {
+    font-weight:500;
+}
 /* Portfolio Page */
 #portfolioTitle {
     color: black;
@@ -246,8 +261,8 @@ body {
 }
 
 #contentBox img {
-    width: 20vmax;
-    height: 14vmax;
+    max-width: 20vmax;
+    max-height: 14vmax;
     border-radius: 20%;
 }
 
@@ -256,13 +271,20 @@ body {
 }
 
 #jthTitle {
-    font-weight: 300;
+    font-weight: 600;
     font-size: 2vmax;
-    text-decoration: underline;
 }
 
 @media (min-width: 1150px) {
     #jthTitle {
         font-size: 23px;
     }
+}
+
+/* resume */
+
+/* background color resume page same as background of pdf  */
+#resumeBg {
+    background-image: none !important;
+    background-color: #525659;
 }
