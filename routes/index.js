@@ -40,6 +40,11 @@ router.get("/about", (req,res) => {
     res.render("about");
 });
 
+// anything else - redirect to home 
+router.get("*", (req,res) => {
+    res.render("home");
+});
+
 // export to app.js
 module.exports = router;
 
