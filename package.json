@@ -1,7 +1,7 @@
 {
   "name": "personal_portfolio",
   "version": "1.0.0",
-  "description": "My personal website, created using Node.js, Express, and Bootstrap",
+  "description": "My personal website, created using Node.js, Express.js, and Bootstrap",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
