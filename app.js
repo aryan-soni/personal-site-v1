@@ -5,6 +5,7 @@ const app = express();
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
+// static
 app.use(express.static(__dirname + "/public"));
 app.use(express.static(__dirname + "/views/files"));
 

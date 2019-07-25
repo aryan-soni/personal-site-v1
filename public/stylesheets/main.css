@@ -1,10 +1,11 @@
+/* background image applies to entire body */
 body {
-    color: black;
-    font-family: 'Raleway', sans-serif;
     background-image: url("../imgs/clouds.jpeg");
 }
 
-/* navbar - need specifity */
+/* -------------------------------------------------------------------- */
+
+/* Navbar - need specificity to target */
 
 /* brand and text color */
 .navbar-custom .navbar-brand,
@@ -40,8 +41,11 @@ body {
     font-size: 2.5vmax;
 }
 
-/* ------------------------------------------------- */
+/* -------------------------------------------------------------------- */
 
+/* Home Page */
+
+/* holds content */
 #box {
     background-color: #F5F5F5;
     margin-top: 20vh;
@@ -50,12 +54,31 @@ body {
     border-style: ridge;
     border-color: #d4af37;
   }
+
+/* styling for name and aboutMe icon */
+#name {
+    color: black;
+    font-weight: 200;
+    font-size: 2.5vmax;
+}
+
+#aboutIcon {
+    color: #585858;
+    font-size: 2.5vmax;
+}
+#aboutIcon:hover {
+    color: #d4af37;
+    font-size: 3.75vmax;    
+}
+
+/* seperates name with icons below */
 #seperator {
     margin-top: 1.5vh;
     background-color: #d4af37;
     height: 1.5px;
 }
 
+/* styling for both rows of icons underneath */
 #firstRow {
     margin-top: 4.5vh;
 }
@@ -68,31 +91,17 @@ body {
     margin-left: 6vh;
 }
 
-#name {
-    color: black;
-    font-weight: 200;
-    font-size: 2.5vmax;
-}
-
-#aboutIcon {
-    color: #585858;
-    font-size: 2.5vmax;
-}
-
 .icon {
     font-size: 3vmax;
     color: #585858;
-}
-
-#aboutIcon:hover {
-    color: #d4af37;
-    font-size: 3.75vmax;    
 }
 
 .icon:hover {
     color: #d4af37;
     font-size: 3.75vmax;
 }
+
+/* responsive change in text size for name and icons */
 @media (max-width: 500px){
     #name {
         font-size: 3vmax;
@@ -106,7 +115,126 @@ body {
         font-size: 3.3vmax;
     }
 }
-/* Contact Page */
+
+/* -------------------------------------------------------------------- */
+
+  /* box holding content for both about page and portfolio page */
+  #contentBox {
+    width: 90vw;
+    background-color: #F5F5F5;
+    border-radius: 10%;
+    border-width: 5px;
+    border-style: ridge;
+    border-color: #d4af37;
+    font-size: 1.7vmax;
+  }
+
+/* -------------------------------------------------------------------- */
+
+/* Portfolio page */
+
+/* title */
+#portfolioTitle {
+    color: black;
+    font-weight: 300;
+    margin-top: 2vh;
+    font-size: 2.7vmax;
+}
+
+/* project container */
+#joinTheHuddle {
+    margin-top: 2vh;
+}
+
+/* title for name of project */
+#jthTitle {
+    font-weight: 600;
+    font-size: 2vmax;
+}
+
+/* title for name of project */
+#jthTitle {
+    font-weight: 600;
+    font-size: 2vmax;
+}
+
+/* responsive title */
+@media (min-width: 1150px) {
+    #jthTitle {
+        font-size: 23px;
+    }
+}
+
+/* image */
+#contentBox img {
+    max-width: 20vmax;
+    max-height: 14vmax;
+    border-radius: 20%;
+}
+
+/* -------------------------------------------------------------------- */
+
+/* About page */
+
+/* general styling for content */
+#aboutPage {
+    color: black;
+    font-weight: 300;
+    width: 90vw;
+    font-family: 'Raleway', sans-serif;
+  }
+
+/* title */
+#aboutTitle {
+    color:black;
+    font-weight: 300;
+    margin-top: 2vh;
+    font-size: 2.7vmax;
+}
+
+/* responsive text size */
+@media (min-width: 1000px) {
+    #contentBox {
+        font-size: 16;
+    }
+    #reach:hover {
+        font-size: 1.7vmax;
+    }
+}
+
+/* link for reaching out */
+#reach {
+    color: #585858;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+/* effect when hovering to demonstrate it's a link */
+#reach:hover {
+    color: #d4af37;
+    font-size: 2vmax;
+}
+
+/* increase font-weight of key words */
+.bold {
+    font-weight:500;
+}
+
+/* -------------------------------------------------------------------- */
+
+/* Resume */
+
+/* background color resume page same as background of pdf  */
+#resumeBg {
+    background-image: none !important;
+    background-color: #525659;
+}
+
+/* -------------------------------------------------------------------- */
+
+/* Contact page */
+
+/* general page content */
 #contactPage {
     color: black;
     font-weight: 300;
@@ -114,7 +242,7 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
-
+/* title */
 #contactTitle {
     font-weight: 300;
     margin-top: 2vh;
@@ -122,14 +250,25 @@ body {
     font-size: 2.7vmax;
 }
 
+/* label for each input */
 .form-group label {
     font-size: 1.7vmax;
+}
+
+/* placeholders for inputs, with support for browsers */
+::-webkit-input-placeholder {
+    font-size: 1.5vmax;
+}
+
+:-ms-input-placeholder {
+    font-size: 1.5vmax;
 }
 
 ::placeholder {
     font-size: 1.5vmax;
 }
 
+/* styling inputs */
 #full-name {
     width: 40vw;
     height: 3.5vh;
@@ -145,6 +284,7 @@ body {
     height: 15vh;
 }
 
+/* submit form button */
 #fs-frm button {
     background-color: #d4af37;
     width: 15vmax;
@@ -153,9 +293,16 @@ body {
     margin-top: 2vh;
 }
 
+/* responsive changes in font size and dimensions */
 @media (min-width: 1000px) {
     .form-group label {
         font-size: 20px;
+    } 
+    ::-webkit-input-placeholder {
+        font-size: 16px;
+    } 
+    ::-ms-input-placeholder {
+        font-size: 16px;
     } 
     ::placeholder {
         font-size: 16px;
@@ -167,124 +314,46 @@ body {
     }
 }
 
+/* send button hovering effects, with necessary support for browsers */
+
 #hover:hover {
-    color: black;
+    color: white;
 }
+
 
 #hover:active {
     background-color:#d4af37;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
+    -webkit-box-shadow: 0 5px #666;
+            box-shadow: 0 5px #666;
+    -webkit-transform: translateY(4px);
+            transform: translateY(4px);
   }
 
-  #hover span {
+#hover span {
     cursor: pointer;
     display: inline-block;
     position: relative;
+    -webkit-transition: 0.5s;
     transition: 0.5s;
   }
   
-  #hover span:after {
+#hover span:after {
     content: '\00bb';
     position: absolute;
     opacity: 0;
     top: 0;
     right: -20px;
+    -webkit-transition: 0.5s;
     transition: 0.5s;
   }
   
-  #hover:hover span {
+#hover:hover span {
     padding-right: 25px;
   }
   
-  #hover:hover span:after {
+#hover:hover span:after {
     opacity: 1;
     right: 0;
   }
 
-  /* Relevant to About Page and Portfolio Page */
-  #contentBox {
-    width: 90vw;
-    background-color: #F5F5F5;
-    border-radius: 10%;
-    border-width: 5px;
-    border-style: ridge;
-    border-color: #d4af37;
-    font-size: 1.7vmax;
-  }
-
-  /* About Page */
-  
-  #aboutPage {
-    color: black;
-    font-weight: 300;
-    width: 90vw;
-    font-family: 'Raleway', sans-serif;
-  }
-
-  #reach {
-      color: #585858;
-      font-weight: 400;
-      text-decoration: underline;
-  }
-
-  #reach:hover {
-      color: #d4af37;
-      font-size: 2vmax;
-  }
-
-@media (min-width: 1000px) {
-    #contentBox {
-        font-size: 16;
-    }
-    #reach:hover {
-        font-size: 1.7vmax;
-    }
-}
-
-#aboutTitle {
-    color:black;
-    font-weight: 300;
-    margin-top: 2vh;
-    font-size: 2.7vmax;
-}
-
-.bold {
-    font-weight:500;
-}
-/* Portfolio Page */
-#portfolioTitle {
-    color: black;
-    font-weight: 300;
-    margin-top: 2vh;
-    font-size: 2.7vmax;
-}
-
-#contentBox img {
-    max-width: 20vmax;
-    max-height: 14vmax;
-    border-radius: 20%;
-}
-
-#joinTheHuddle {
-    margin-top: 2vh;
-}
-
-#jthTitle {
-    font-weight: 600;
-    font-size: 2vmax;
-}
-
-@media (min-width: 1150px) {
-    #jthTitle {
-        font-size: 23px;
-    }
-}
-
-/* resume */
-
-/* background color resume page same as background of pdf  */
-#resumeBg {
-    background-image: none !important;
-    background-color: #525659;
-}
+  /* -------------------------------------------------------------------- */

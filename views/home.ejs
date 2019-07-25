@@ -1,17 +1,22 @@
 <% include ./partials/header %>
 
 <div class="container-fluid d-flex justify-content-center"> 
+    <!-- Styled box to hold content -->
     <div id="box" class="px-5 pb-5 pt-3">
         <div class="row" id="firstRow">
+            <!-- Center content -->
             <div class="col-sm-12 d-flex justify-content-center">
                 <h1 id="name">Aryan Soni 
+                    <!-- Add aboutMe icon beside name -->
                     <a href="/about">
                         <i class="fas fa-user fa-fw" id="aboutIcon"></i>
                     </a>
                 </h1>
             </div>
          </div>
-         <div id="seperator"></div>
+         <!-- Div instead of hr for styling  -->
+         <div id="seperator"></div> 
+         <!-- Bootstrap grid system and flexbox to style icons, which link to routes -->
          <div class="row d-flex justify-content-center" id="firstRow">
             <div class="col-3-sm" id="resume">
                 <a href="/resume">
