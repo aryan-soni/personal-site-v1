@@ -1,6 +1,7 @@
-html {
+body {
     color: black;
     font-family: 'Raleway', sans-serif;
+    background-image: url("../imgs/clouds.jpeg");
 }
 
 /* navbar - need specifity */
@@ -8,7 +9,7 @@ html {
 /* brand and text color */
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-text {
-    color: white;
+    color: black;
     font-size: 2vh;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
@@ -21,7 +22,7 @@ html {
 }
 /* color of links */
 .navbar-custom .navbar-nav .nav-link {
-    color: white;
+    color: black;
     font-size: 2vh;
     font-family: 'Raleway', sans-serif;
 }
@@ -35,31 +36,11 @@ html {
 /* dropdown */
 
 #toggler {
-    color:white;
+    color:black;
     font-size: 2.5vmax;
 }
 
 /* ------------------------------------------------- */
-
-
-body::after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: -1;   
-    background-image: url('../imgs/space_image.jpeg');
-    opacity: 0.8;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-  }
 
 #box {
     background-color: #F5F5F5;
@@ -115,7 +96,7 @@ body::after {
 
 /* Contact Page */
 #contactPage {
-    color: white;
+    color: black;
     font-weight: 300;
     width: 75vw;
     font-family: 'Raleway', sans-serif;
@@ -175,7 +156,7 @@ body::after {
 }
 
 #hover:hover {
-    color: white;
+    color: black;
 }
 
 #hover:active {
@@ -244,10 +225,13 @@ body::after {
     #contentBox {
         font-size: 16;
     }
+    #reach:hover {
+        font-size: 1.7vmax;
+    }
 }
 
 #aboutTitle {
-    color: white;
+    color:black;
     font-weight: 300;
     margin-top: 2vh;
     font-size: 2.7vmax;
@@ -255,7 +239,7 @@ body::after {
 
 /* Portfolio Page */
 #portfolioTitle {
-    color: white;
+    color: black;
     font-weight: 300;
     margin-top: 2vh;
     font-size: 2.7vmax;
@@ -263,7 +247,7 @@ body::after {
 
 #contentBox img {
     width: 20vmax;
-    height: 15vmax;
+    height: 14vmax;
     border-radius: 20%;
 }
 
@@ -282,25 +266,3 @@ body::after {
         font-size: 23px;
     }
 }
-
-/* resume */
-.content {
-    width: 100%;
-    margin: 0px auto;
- }
- 
- .embed-container {
-    height: 0;
-    width: 100%;
-    padding-bottom: 60%; /* play with this until right */
-    overflow: hidden;
-    position: relative;
- }
- 
- .embed-container iframe {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
- }
