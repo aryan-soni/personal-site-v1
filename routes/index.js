@@ -14,7 +14,7 @@ router.get("/", (req,res) => {
 
 // resume 
 router.get("/resume", (req,res)=> {
-    res.redirect("https://drive.google.com/file/d/1pDwevSji7ciibq6OeJnMKlvt5wk-ojKW/view?usp=sharing");
+    res.render("resume");
 });
 
 // portfolio
