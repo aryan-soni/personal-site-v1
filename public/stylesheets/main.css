@@ -1,6 +1,8 @@
 /* background image applies to entire body */
 body {
     background-image: url("../imgs/clouds.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /* -------------------------------------------------------------------- */
