@@ -12,8 +12,8 @@ router.get("/", (req,res) => {
 
 // resume 
 router.get("/resume", (req,res)=> {
-    // render resume page
-    res.render("resume");
+    // redirect to resume page
+    res.redirect("https://drive.google.com/file/d/1etYFGGBqeNKRIMBUjhYSX9LQAIC3skEQ/view?usp=sharing");
 });
 
 // portfolio
