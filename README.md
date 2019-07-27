@@ -20,5 +20,5 @@ https://www.aryansoni.com
 * EJS
 * FontAwesome
 * formspree.io API
-* Heroku
+* Zeit
 
