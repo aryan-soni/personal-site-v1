@@ -10,7 +10,7 @@ This is my personal website, built using Node.js, Express.js, and Bootstrap.
 - Visit http://localhost:3000
 
 ## Live URL
-https://www.aryansoni.com
+http://www.aryansoni.com
 
 ## Technologies Used
 
@@ -20,5 +20,5 @@ https://www.aryansoni.com
 * EJS
 * FontAwesome
 * formspree.io API
-* Zeit
+* Heroku
 
