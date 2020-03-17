@@ -9,9 +9,6 @@ This is my personal website, built using Node.js, Express.js, and Bootstrap.
 - Type "node app.js" or "npm start" to start the server 
 - Visit http://localhost:3000
 
-## Live URL
-http://www.aryansoni.com
-
 ## Technologies Used
 
 * Node.js
