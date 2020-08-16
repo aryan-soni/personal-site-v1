@@ -19,3 +19,6 @@ This is my personal website, built using Node.js, Express.js, and Bootstrap.
 * formspree.io API
 * Heroku
 
+## Live URL
+https://aryansoniv1.herokuapp.com/
+
