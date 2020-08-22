@@ -1,6 +1,6 @@
 # personal-site-v1
 
-This is my personal website, built using Node.js, Express.js, and Bootstrap. 
+This is the first iteration of my personal website, built using Node.js, Express.js, and Bootstrap. 
 
 ## Getting Started
 
